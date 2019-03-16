@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Digital Ocean Spaces Example
-//
-//  Created by Brenton on 16/3/19.
-//  Copyright © 2019 The Cloud Hub. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

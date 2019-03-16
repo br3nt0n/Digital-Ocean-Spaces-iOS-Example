@@ -1,20 +1,26 @@
-//
-//  ViewController.swift
-//  Digital Ocean Spaces Example
-//
-//  Created by Brenton on 16/3/19.
-//  Copyright © 2019 The Cloud Hub. All rights reserved.
-//
-
+import AWSS3
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    private let spacesFileRepository = SpacesFileRepository()
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBAction func uploadExampleFile(){
+        spacesFileRepository.uploadExampleFile()
     }
-
-
+    
+    @IBAction func downloadExampleFile(){
+        //Download and show the image in a UIImageView
+        spacesFileRepository.downloadExampleFile { (data, error) in
+            guard let data = data else {
+                print("Image failed to download")
+                return
+            }
+            DispatchQueue.main.async {
+                self.imageView.image = UIImage(data: data)
+            }
+        }
+    }
 }
 

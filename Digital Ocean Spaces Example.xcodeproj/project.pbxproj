@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9A9C39F250838E01D0C979A /* Pods_Digital_Ocean_Spaces_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFC7BA177C62E91605C82C6 /* Pods_Digital_Ocean_Spaces_Example.framework */; };
 		DB10EA84223C4299008F7BA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB10EA83223C4299008F7BA3 /* AppDelegate.swift */; };
 		DB10EA86223C4299008F7BA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB10EA85223C4299008F7BA3 /* ViewController.swift */; };
 		DB10EA89223C4299008F7BA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB10EA87223C4299008F7BA3 /* Main.storyboard */; };
 		DB10EA8B223C429A008F7BA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB10EA8A223C429A008F7BA3 /* Assets.xcassets */; };
 		DB10EA8E223C429A008F7BA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB10EA8C223C429A008F7BA3 /* LaunchScreen.storyboard */; };
+		DB10EA98223C7BC1008F7BA3 /* SpacesFileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB10EA97223C7BC1008F7BA3 /* SpacesFileRepository.swift */; };
+		DB10EA9C223C8293008F7BA3 /* example-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB10EA9B223C8293008F7BA3 /* example-image.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6BDB08ABD3434A599B36B81E /* Pods-Digital Ocean Spaces Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Digital Ocean Spaces Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Digital Ocean Spaces Example/Pods-Digital Ocean Spaces Example.debug.xcconfig"; sourceTree = "<group>"; };
+		74906A463C1BC6460175EDC6 /* Pods-Digital Ocean Spaces Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Digital Ocean Spaces Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Digital Ocean Spaces Example/Pods-Digital Ocean Spaces Example.release.xcconfig"; sourceTree = "<group>"; };
+		7EFC7BA177C62E91605C82C6 /* Pods_Digital_Ocean_Spaces_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Digital_Ocean_Spaces_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB10EA80223C4299008F7BA3 /* Digital Ocean Spaces Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digital Ocean Spaces Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB10EA83223C4299008F7BA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB10EA85223C4299008F7BA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		DB10EA8A223C429A008F7BA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB10EA8D223C429A008F7BA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB10EA8F223C429A008F7BA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB10EA97223C7BC1008F7BA3 /* SpacesFileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacesFileRepository.swift; sourceTree = "<group>"; };
+		DB10EA9B223C8293008F7BA3 /* example-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "example-image.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A9C39F250838E01D0C979A /* Pods_Digital_Ocean_Spaces_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DAE312E65A0A3FAA39AA017 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BDB08ABD3434A599B36B81E /* Pods-Digital Ocean Spaces Example.debug.xcconfig */,
+				74906A463C1BC6460175EDC6 /* Pods-Digital Ocean Spaces Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		288C984D1ACD7C8F131C9B84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EFC7BA177C62E91605C82C6 /* Pods_Digital_Ocean_Spaces_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DB10EA77223C4299008F7BA3 = {
 			isa = PBXGroup;
 			children = (
 				DB10EA82223C4299008F7BA3 /* Digital Ocean Spaces Example */,
 				DB10EA81223C4299008F7BA3 /* Products */,
+				1DAE312E65A0A3FAA39AA017 /* Pods */,
+				288C984D1ACD7C8F131C9B84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +84,12 @@
 			children = (
 				DB10EA83223C4299008F7BA3 /* AppDelegate.swift */,
 				DB10EA85223C4299008F7BA3 /* ViewController.swift */,
+				DB10EA97223C7BC1008F7BA3 /* SpacesFileRepository.swift */,
 				DB10EA87223C4299008F7BA3 /* Main.storyboard */,
 				DB10EA8A223C429A008F7BA3 /* Assets.xcassets */,
 				DB10EA8C223C429A008F7BA3 /* LaunchScreen.storyboard */,
 				DB10EA8F223C429A008F7BA3 /* Info.plist */,
+				DB10EA9B223C8293008F7BA3 /* example-image.jpg */,
 			);
 			path = "Digital Ocean Spaces Example";
 			sourceTree = "<group>";
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB10EA92223C429A008F7BA3 /* Build configuration list for PBXNativeTarget "Digital Ocean Spaces Example" */;
 			buildPhases = (
+				FA6B27719A8A83015620101E /* [CP] Check Pods Manifest.lock */,
 				DB10EA7C223C4299008F7BA3 /* Sources */,
 				DB10EA7D223C4299008F7BA3 /* Frameworks */,
 				DB10EA7E223C4299008F7BA3 /* Resources */,
+				CE7E8950848B037C0D83ED97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB10EA9C223C8293008F7BA3 /* example-image.jpg in Resources */,
 				DB10EA8E223C429A008F7BA3 /* LaunchScreen.storyboard in Resources */,
 				DB10EA8B223C429A008F7BA3 /* Assets.xcassets in Resources */,
 				DB10EA89223C4299008F7BA3 /* Main.storyboard in Resources */,
@@ -130,12 +163,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CE7E8950848B037C0D83ED97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Digital Ocean Spaces Example/Pods-Digital Ocean Spaces Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Digital Ocean Spaces Example/Pods-Digital Ocean Spaces Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA6B27719A8A83015620101E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Digital Ocean Spaces Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB10EA7C223C4299008F7BA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DB10EA86223C4299008F7BA3 /* ViewController.swift in Sources */,
+				DB10EA98223C7BC1008F7BA3 /* SpacesFileRepository.swift in Sources */,
 				DB10EA84223C4299008F7BA3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +355,7 @@
 		};
 		DB10EA93223C429A008F7BA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BDB08ABD3434A599B36B81E /* Pods-Digital Ocean Spaces Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +373,7 @@
 		};
 		DB10EA94223C429A008F7BA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74906A463C1BC6460175EDC6 /* Pods-Digital Ocean Spaces Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
