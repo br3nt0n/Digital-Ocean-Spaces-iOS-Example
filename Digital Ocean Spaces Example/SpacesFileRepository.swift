@@ -14,7 +14,7 @@ struct SpacesFileRepository {
     private static let accessKey = "YOUR-ACCESS-KEY-HERE"
     private static let secretKey = "YOUR-SECRET-KEY-HERE"
     private static let bucket = "YOUR-BUCKET-NAME-HERE"
-    private let fileName = "YOUR-EXAMPLE-FILE-NAME-HERE"
+    private let fileName = "example-image"
     
     private var transferUtility: AWSS3TransferUtility?
     
